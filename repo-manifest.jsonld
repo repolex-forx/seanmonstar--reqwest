@@ -441,8 +441,9 @@
     {
       "@id": "https://repolex.ai/r/seanmonstar/reqwest/commit/62a80af8fbb743a2c7bfcb64d8896f80a3b9f6fa",
       "git:hexsha": "62a80af8fbb743a2c7bfcb64d8896f80a3b9f6fa",
-      "repolex:parseStatus": "pending",
-      "git:tagName": "v0.13.0"
+      "repolex:parseStatus": "parsed",
+      "git:tagName": "v0.13.0",
+      "repolex:parsedAt": "2026-05-08T18:10:47.346154+00:00"
     },
     {
       "@id": "https://repolex.ai/r/seanmonstar/reqwest/commit/9a9daa7921dc875b90dd1798d2edbd86e476a30a",
