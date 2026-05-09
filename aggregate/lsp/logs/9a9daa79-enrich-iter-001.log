@@ -1,0 +1,35 @@
+[2026-05-09T22:12:37Z] === ENRICH ITERATION 1 START | repo=seanmonstar/reqwest sha=9a9daa79 ===
+[2026-05-09T22:12:37Z] [iter=1] PHASE START: enrich repo=seanmonstar/reqwest sha=9a9daa79 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/9a9daa79-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/9a9daa7921dc875b90dd1798d2edbd86e476a30a.nq.gz
+[2026-05-09T22:12:51Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-05-09T22:12:58Z] [iter=1] AST store loaded triples=958913 load_secs=7 mem_mb=845 MB
+[2026-05-09T22:12:58Z] [iter=1] Step 2: Finding LSP targets mem_mb=845 MB
+[2026-05-09T22:13:00Z] [iter=1] LSP targets found call_sites=8774 imports=462 extends=0 implements=182 secs=2
+[2026-05-09T22:13:02Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=845 MB
+[2026-05-09T22:13:07Z] [iter=1] Position index built positions=65236 nodes_with_types=80253 secs=5 mem_mb=845 MB
+[2026-05-09T22:13:07Z] [iter=1] Step 3: Starting LSP resolution mem_mb=845 MB already_completed_types=[] already_completed_files=0
+[2026-05-09T22:13:07Z] [iter=1] Resolving target type target_type=call_site count=8774
+[2026-05-09T22:13:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=0 resolved=0 errors=0 current=tests/support/not_tcp.rs
+[2026-05-09T22:15:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.6 files_done=2 resolved=117 errors=162 current=src/async_impl/request.rs
+[2026-05-09T22:16:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.5 files_done=3 resolved=246 errors=288 current=tests/client.rs
+[2026-05-09T22:17:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=4.5 files_done=5 resolved=578 errors=435 current=examples/json_typed.rs
+[2026-05-09T22:18:52Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.3 files_done=8 resolved=840 errors=704 current=tests/redirect.rs
+[2026-05-09T22:19:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.8 files_done=9 resolved=1125 errors=788 current=src/async_impl/response.rs
+[2026-05-09T22:20:54Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=8.3 files_done=11 resolved=1559 errors=1000 current=src/wasm/multipart.rs
+[2026-05-09T22:22:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=9.6 files_done=16 resolved=1973 errors=1195 current=tests/connector_layers.rs
+[2026-05-09T22:22:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.4 files_done=19 resolved=2286 errors=1320 current=tests/support/delay_layer.rs
+[2026-05-09T22:23:33Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.9 files_done=22 resolved=2393 errors=1404 current=src/wasm/body.rs
+[2026-05-09T22:24:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=11.8 files_done=31 resolved=2869 errors=1534 current=tests/support/server.rs
+[2026-05-09T22:24:57Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=12.3 files_done=34 resolved=3034 errors=1617 current=tests/cookie.rs
+[2026-05-09T22:25:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.1 files_done=39 resolved=3276 errors=1735 current=src/redirect.rs
+[2026-05-09T22:26:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=13.6 files_done=40 resolved=3330 errors=1815 current=tests/timeouts.rs
+[2026-05-09T22:26:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.2 files_done=45 resolved=3647 errors=1904 current=examples/json_dynamic.rs
+[2026-05-09T22:27:19Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=14.7 files_done=65 resolved=3792 errors=1979 current=src/dns/gai.rs
+[2026-05-09T22:27:26Z] [iter=1] Target type resolved target_type=call_site resolved=3813 errors=1993 secs=860 mem_mb=845 MB
+[2026-05-09T22:27:26Z] [iter=1] Resolving target type target_type=import_statement count=462
+[2026-05-09T22:27:48Z] [iter=1] Target type resolved target_type=import_statement resolved=268 errors=0 secs=21 mem_mb=845 MB
+[2026-05-09T22:27:48Z] [iter=1] Resolving target type target_type=implements_clause count=182
+[2026-05-09T22:27:49Z] [iter=1] HEARTBEAT target_type=implements_clause elapsed_min=15.2 files_done=0 resolved=0 errors=0 current=src/cookie.rs
+[2026-05-09T22:28:07Z] [iter=1] Target type resolved target_type=implements_clause resolved=113 errors=0 secs=19 mem_mb=845 MB
+[2026-05-09T22:28:30Z] [iter=1] Step 5: Writing final enrichment file triples=59996
+[2026-05-09T22:28:32Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/9a9daa7921dc875b90dd1798d2edbd86e476a30a.nq.gz size_kb=1175
+[2026-05-09T22:28:32Z] [iter=1] PHASE END: enrich elapsed_s=955 elapsed_min=15.9 total_triples=59996
