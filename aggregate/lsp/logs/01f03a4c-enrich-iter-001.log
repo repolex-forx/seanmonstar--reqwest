@@ -1,0 +1,23 @@
+[2026-05-10T09:44:43Z] === ENRICH ITERATION 1 START | repo=seanmonstar/reqwest sha=01f03a4c ===
+[2026-05-10T09:44:43Z] [iter=1] PHASE START: enrich repo=seanmonstar/reqwest sha=01f03a4c runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/01f03a4c-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/01f03a4c01fb13e2262a513ed21e2b84b5186f46.nq.gz
+[2026-05-10T09:44:58Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-05-10T09:45:00Z] [iter=1] AST store loaded triples=340265 load_secs=2 mem_mb=554 MB
+[2026-05-10T09:45:00Z] [iter=1] Step 2: Finding LSP targets mem_mb=554 MB
+[2026-05-10T09:45:01Z] [iter=1] LSP targets found call_sites=3314 imports=205 extends=0 implements=61 secs=1
+[2026-05-10T09:45:01Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=554 MB
+[2026-05-10T09:45:03Z] [iter=1] Position index built positions=22544 nodes_with_types=28470 secs=1 mem_mb=554 MB
+[2026-05-10T09:45:03Z] [iter=1] Step 3: Starting LSP resolution mem_mb=554 MB already_completed_types=[] already_completed_files=0
+[2026-05-10T09:45:03Z] [iter=1] Resolving target type target_type=call_site count=3314
+[2026-05-10T09:45:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.7 files_done=0 resolved=0 errors=0 current=src/wasm/body.rs
+[2026-05-10T09:45:58Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=1.2 files_done=3 resolved=163 errors=99 current=src/async_impl/h3_client/pool.rs
+[2026-05-10T09:46:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.0 files_done=7 resolved=450 errors=406 current=tests/zstd.rs
+[2026-05-10T09:47:18Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.6 files_done=14 resolved=812 errors=686 current=tests/http3.rs
+[2026-05-10T09:47:47Z] [iter=1] Target type resolved target_type=call_site resolved=1202 errors=868 secs=164 mem_mb=554 MB
+[2026-05-10T09:47:47Z] [iter=1] Resolving target type target_type=import_statement count=205
+[2026-05-10T09:47:58Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=3.2 files_done=1 resolved=9 errors=0 current=src/wasm/body.rs
+[2026-05-10T09:48:06Z] [iter=1] Target type resolved target_type=import_statement resolved=98 errors=0 secs=19 mem_mb=554 MB
+[2026-05-10T09:48:06Z] [iter=1] Resolving target type target_type=implements_clause count=61
+[2026-05-10T09:48:23Z] [iter=1] Target type resolved target_type=implements_clause resolved=41 errors=0 secs=17 mem_mb=554 MB
+[2026-05-10T09:48:42Z] [iter=1] Step 5: Writing final enrichment file triples=22438
+[2026-05-10T09:48:43Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/01f03a4c01fb13e2262a513ed21e2b84b5186f46.nq.gz size_kb=423
+[2026-05-10T09:48:43Z] [iter=1] PHASE END: enrich elapsed_s=240 elapsed_min=4.0 total_triples=22438
